@@ -1,9 +1,9 @@
 /* global styles */
 :root {
-    --heading-color:rgb(22, 22, 59);
-    --heading-text-color: rgb(148, 209, 205);
+    --heading-color:rgb(245, 178, 71);
+    --title-color: rgb(96, 169, 228);
     --background-color: white;
-    --text-color: rgb(41, 41, 76);
+    --text-color: rgb(38, 51, 86);
     --site-font: Arial, Helvetica, sans-serif;
 }
 
@@ -15,11 +15,16 @@ body{
     background-color: var(--background-color);
     color: var(--text-color);
     font-family: var(--site-font);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
 }
 
 header {
     background: var(--heading-color);
-    color: var(--heading-text-color;)
+    color: var(--text-color;)
     padding: 3px 0 3px 0;
     display: flex;
     justify-content: space-between;
@@ -29,8 +34,8 @@ header {
 }
 
 h1, h2 {
-    border: 2px solid rgb(148, 209, 205);
-    background: var(--heading-text-color);
+    border: 2px solid var(--title-color);
+    background: var(--title-color);
     color: var(--text-color);
     padding: 1%;
 }
@@ -51,18 +56,26 @@ h2 {
 
 nav ul {
     display: flex;
-    justify-content: space-between;
-    min-width: 300px;
-    padding: 1%;
+    justify-content: space-evenly;
     list-style: none;
   }
   
   nav a {
-    color: var(--heading-text-color);
+    color: var(--text-color);
     font-weight: bold;
-    text-decoration: underline;
-    text-decoration-thickness: 4px;
+    border-bottom: 3 px solid var(--text-color);
     line-height: 1.5;
+  }
+
+
+ /* do i neeed this? */
+  header nav ul {
+    min-width: 300px;
+    padding: 1%;
+  }
+
+  /* do i neeed this? */
+  header nav a {
     min-width: 300px;
   }
 
@@ -84,26 +97,59 @@ nav ul {
 }
 
 
-/* h2 {
-    border: 2px solid rgb(148, 209, 205);
-    background: var(--heading-text-color);
+footer{
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+    background: var(--heading-color);
     color: var(--text-color);
-    font-size: 28px;
-    width: 20%;
-    text-align: left;
-    padding: 1%;
-    min-width: 120px;
-} */
+    margin-top: auto;
+    text-align: center;
+}
 
-  /* figure out how to best factor the subtitle - keep inline, responsive, move around, add box */
-  /* h2{
-    background-image: url("pexels-dom-j-310452.jpg");
-    background-color: paleturquoise;
-    height: 150px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0 0 0 0;
-    text-align: right;
+/* idk */
+main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
 
-  } */
+.container{
+    display:flex;
+    align-items: flex-start;
+    width: 100%;
+    margin: 1% auto;
+    padding:20px;
+
+    
+}
+
+.section-name{
+    /* how do i add the line after this section? how can i make the contents fill the entire space? */
+    /* border-right: 2px solid var(--text-color); */
+    display:flex;
+    /* width:20%; */
+    height:100%;
+    justify-content: flex-end;
+    padding: 20px;
+    
+
+}
+
+
+
+.section-content{
+    display:flex;
+    flex: 1 0 70%;
+    justify-content: center;
+    align-items: center;
+    /* width: 70%; */
+    padding: 20px;
+}
+
+.section-content nav{
+    width:100%;
+}
