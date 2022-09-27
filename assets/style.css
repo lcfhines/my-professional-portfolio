@@ -1,0 +1,109 @@
+/* global styles */
+:root {
+    --heading-color:rgb(22, 22, 59);
+    --heading-text-color: rgb(148, 209, 205);
+    --background-color: white;
+    --text-color: rgb(41, 41, 76);
+    --site-font: Arial, Helvetica, sans-serif;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--site-font);
+}
+
+header {
+    background: var(--heading-color);
+    color: var(--heading-text-color;)
+    padding: 3px 0 3px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 435px;
+    
+}
+
+h1, h2 {
+    border: 2px solid rgb(148, 209, 205);
+    background: var(--heading-text-color);
+    color: var(--text-color);
+    padding: 1%;
+}
+
+h1{
+    font-size: 28px;
+    width: 20%;
+    text-align: right;
+    min-width: 120px;
+}
+
+h2 {
+    font-size: 20px;
+    width: 30%;
+    min-width: 135px;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    padding: 1%;
+    list-style: none;
+  }
+  
+  nav a {
+    color: var(--heading-text-color);
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    line-height: 1.5;
+    min-width: 300px;
+  }
+
+/* figure out what to make min-width for all of the elements */
+
+.subtitle-image {
+    background-image: url("pexels-dom-j-310452.jpg");
+    background-color: paleturquoise;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 0 0 0;
+    text-align: right;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    min-width: 435px;
+}
+
+
+/* h2 {
+    border: 2px solid rgb(148, 209, 205);
+    background: var(--heading-text-color);
+    color: var(--text-color);
+    font-size: 28px;
+    width: 20%;
+    text-align: left;
+    padding: 1%;
+    min-width: 120px;
+} */
+
+  /* figure out how to best factor the subtitle - keep inline, responsive, move around, add box */
+  /* h2{
+    background-image: url("pexels-dom-j-310452.jpg");
+    background-color: paleturquoise;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 0 0 0;
+    text-align: right;
+
+  } */
