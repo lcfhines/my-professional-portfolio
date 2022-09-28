@@ -13,6 +13,7 @@
     padding: 0;
 }
 
+/* selects body */
 body {
     background-color: var(--background-color);
     color: var(--text-color);
@@ -20,6 +21,7 @@ body {
     font-size: 16px;
 }
 
+/* selects header */
 header {
     background: var(--heading-color);
     color: var(--text-color);
@@ -29,11 +31,13 @@ header {
     align-items: center;
 }
 
+/* selects list element in the header */
 header li {
     display: inline-flex;
     flex-flow: row wrap;
 }
 
+/* selects the a elements within the nav in the header */
 header nav a {
     color: var(--text-color);
     font-weight: bold;
@@ -42,7 +46,7 @@ header nav a {
     padding: 8px;
 }
 
-
+/* selects the div in the header */
 header div {
     border: 2px solid var(--title-color);
     background: var(--title-color);
@@ -51,21 +55,15 @@ header div {
     display: flex;
 }
 
+/* selects the avatar class (image in the header) */
 .avatar {
     max-height: 50px;
-    width:auto;
+    width: auto;
     padding: 1%;
     display: inline;
 }
 
-/* h1, */
-h2 {
-    border: 2px solid var(--title-color);
-    background: var(--title-color);
-    color: var(--text-color);
-    padding: 1%;
-}
-
+/* selects h1 elements */
 h1 {
     font-size: 28px;
     text-align: right;
@@ -73,90 +71,93 @@ h1 {
     padding-top: 8px;
 }
 
+/* selects h2 elements */
 h2 {
+    border: 2px solid var(--title-color);
+    background: var(--title-color);
+    color: var(--text-color);
+    padding: 1%;
     font-size: 20px;
 }
 
-
+/* selects the footer */
 footer {
     background: var(--heading-color);
     color: var(--text-color);
     text-align: center;
-    padding:10px;
+    padding: 10px;
     font-size: 14px;
 }
 
-/* somewhat feel good until this point */
 
-
-
-
-
+/* selects the class subtitle image */
 .subtitle-image {
-    background-image: url("assets/images/pexels-dom-j-310452.jpg");
+    background-image: url(./images/pexels-dom-j-310452.jpg);
     background-color: paleturquoise;
-    height: 150px;
+    height: 80px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* margin: 0 0 0 0; */
     text-align: right;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    /* min-width: 435px; */
 }
 
-main{
+/* selects main */
+main {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
 
+/* selects class container (section) */
 .container {
     display: flex;
     flex: 1 0 100%;
     align-items: flex-start;
     margin: 1% auto;
     padding: 20px;
-    border: red 5px solid;
+    justify-content: flex-start;
 }
 
 
+/* selects class section-name (h3) */
 .section-name {
-    /* how do i add the line after this section? how can i make the contents fill the entire space? */
-    /* border-right: 2px solid var(--text-color); */
+
     display: flex;
-    /* width:20%; */
+    max-width: 300px;
     height: 100%;
     justify-content: flex-end;
     padding: 20px;
-    align-items:center;
+    align-items: center;
+    flex: 4 1 100px;
 }
 
+/* selects class section-content (article) */
 .section-content {
     display: flex;
     border-left: 5px solid var(--heading-color);
     flex: 1 0 70%;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 20px 20px 20px 60px;
     flex-wrap: wrap;
+    max-width: 650px
 }
 
-
+/* selects class work-card (figure) */
 .work-card {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 5px;
     position: relative;
     text-align: center;
     color: var(--text-color);
     background-color: var(--heading-color);
 }
 
-
+/* selects class work-card-desc (h4) */
 .work-card-desc {
     position: aboslute;
     bottom: 8px;
@@ -164,33 +165,34 @@ main{
 
 }
 
-#rock-paper, #dummy-project {
+/* selects the ids rock-paper and dummy-project */
+#rock-paper,
+#dummy-project {
     max-width: 50%;
 }
 
-
-
+/* selects the nav within the section-content class */
 .section-content nav {
     width: 100%;
 }
 
 
+/* selects the ul within the contact-links id */
+#contact-links ul {
 
-
-/* contact links - seem ok */
-#contact-links ul{
-    /* display: flex; */
     align-items: center;
     justify-content: space-evenly;
 }
 
-#contact-links li{
+/* selects the li within the contact-links id */
+#contact-links li {
     display: inline-flex;
     flex-flow: row wrap;
     align-items:
 }
 
-#contact-links nav a{
+/* selects the nav a within the contact-links id */
+#contact-links nav a {
     color: var(--text-color);
     font-weight: bold;
     border-bottom: 3 px solid var(--text-color);
@@ -200,4 +202,3 @@ main{
 }
 
 /* /* media query for larger screens */
-
