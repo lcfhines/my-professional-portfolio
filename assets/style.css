@@ -23,7 +23,7 @@ body {
 header {
     background: var(--heading-color);
     color: var(--text-color);
-    padding: 3px 0 3px 0;
+    padding: 8px 0 8px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,27 +53,27 @@ h2 {
 
 h1 {
     font-size: 28px;
-    width: 20%;
     text-align: right;
 }
 
 h2 {
     font-size: 20px;
-    width: 30%;
-
 }
 
 
 footer {
-    display: flex;
     background: var(--heading-color);
     color: var(--text-color);
-    /* margin-top: auto; */
     text-align: center;
-    padding-top: 100px;
+    padding:10px;
+    font-size: 14px;
 }
 
 /* somewhat feel good until this point */
+
+
+
+
 
 .subtitle-image {
     background-image: url("pexels-dom-j-310452.jpg");
@@ -82,7 +82,7 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0 0 0 0;
+    /* margin: 0 0 0 0; */
     text-align: right;
     display: flex;
     align-items: flex-end;
@@ -90,19 +90,21 @@ footer {
     /* min-width: 435px; */
 }
 
-
-.section-content {
+main{
     display: flex;
-    border-left: 5px solid var(--heading-color);
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .container {
     display: flex;
+    flex: 1 0 100%;
     align-items: flex-start;
-    width: 100%;
     margin: 1% auto;
     padding: 20px;
+    border: red 5px solid;
 }
+
 
 .section-name {
     /* how do i add the line after this section? how can i make the contents fill the entire space? */
@@ -112,24 +114,40 @@ footer {
     height: 100%;
     justify-content: flex-end;
     padding: 20px;
+    align-items:center;
 }
 
 .section-content {
     display: flex;
+    border-left: 5px solid var(--heading-color);
     flex: 1 0 70%;
     justify-content: center;
     align-items: center;
-    /* width: 70%; */
     padding: 20px;
+    flex-wrap: wrap;
 }
+
+.work-card {
+    border: red 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5px;
+}
+
+.work-card-desc {
+
+}
+
 
 .section-content nav {
     width: 100%;
 }
 
+
 /* contact links - seem ok */
 #contact-links ul{
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: space-evenly;
 }
