@@ -43,7 +43,22 @@ header nav a {
 }
 
 
-h1,
+header div {
+    border: 2px solid var(--title-color);
+    background: var(--title-color);
+    color: var(--text-color);
+    padding: 1%;
+    display: flex;
+}
+
+.avatar {
+    max-height: 50px;
+    width:auto;
+    padding: 1%;
+    display: inline;
+}
+
+/* h1, */
 h2 {
     border: 2px solid var(--title-color);
     background: var(--title-color);
@@ -54,6 +69,8 @@ h2 {
 h1 {
     font-size: 28px;
     text-align: right;
+    padding-right: 10px;
+    padding-top: 8px;
 }
 
 h2 {
@@ -76,7 +93,7 @@ footer {
 
 
 .subtitle-image {
-    background-image: url("pexels-dom-j-310452.jpg");
+    background-image: url("assets/images/pexels-dom-j-310452.jpg");
     background-color: paleturquoise;
     height: 150px;
     background-position: center;
@@ -127,22 +144,37 @@ main{
     flex-wrap: wrap;
 }
 
+
 .work-card {
-    border: red 1px solid;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding: 5px;
+    position: relative;
+    text-align: center;
+    color: var(--text-color);
+    background-color: var(--heading-color);
 }
+
 
 .work-card-desc {
+    position: aboslute;
+    bottom: 8px;
+    right: 16px;
 
 }
+
+#rock-paper, #dummy-project {
+    max-width: 50%;
+}
+
 
 
 .section-content nav {
     width: 100%;
 }
+
+
 
 
 /* contact links - seem ok */
