@@ -1,85 +1,79 @@
 /* global styles */
 :root {
-    --heading-color:rgb(245, 178, 71);
+    --heading-color: rgb(245, 178, 71);
     --title-color: rgb(96, 169, 228);
     --background-color: white;
     --text-color: rgb(38, 51, 86);
     --site-font: Arial, Helvetica, sans-serif;
 }
 
-*{
-    box-sizing:border-box;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-body{
+body {
     background-color: var(--background-color);
     color: var(--text-color);
     font-family: var(--site-font);
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: flex-start;
+    font-size: 16px;
 }
 
 header {
     background: var(--heading-color);
-    color: var(--text-color;)
+    color: var(--text-color);
     padding: 3px 0 3px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 435px;
-    
 }
 
-h1, h2 {
+header li {
+    display: inline-flex;
+    flex-flow: row wrap;
+}
+
+header nav a {
+    color: var(--text-color);
+    font-weight: bold;
+    border-bottom: 3 px solid var(--text-color);
+    line-height: 1.5;
+    padding: 8px;
+}
+
+
+h1,
+h2 {
     border: 2px solid var(--title-color);
     background: var(--title-color);
     color: var(--text-color);
     padding: 1%;
 }
 
-h1{
+h1 {
     font-size: 28px;
     width: 20%;
     text-align: right;
-    min-width: 120px;
 }
 
 h2 {
     font-size: 20px;
     width: 30%;
-    min-width: 135px;
 
 }
 
-nav ul {
+
+footer {
     display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-  }
-  
-  nav a {
+    background: var(--heading-color);
     color: var(--text-color);
-    font-weight: bold;
-    border-bottom: 3 px solid var(--text-color);
-    line-height: 1.5;
-  }
+    /* margin-top: auto; */
+    text-align: center;
+    padding-top: 100px;
+}
 
-
- /* do i neeed this? */
-  header nav ul {
-    min-width: 300px;
-    padding: 1%;
-  }
-
-  /* do i neeed this? */
-  header nav a {
-    min-width: 300px;
-  }
-
-/* figure out what to make min-width for all of the elements */
+/* somewhat feel good until this point */
 
 .subtitle-image {
     background-image: url("pexels-dom-j-310452.jpg");
@@ -93,56 +87,35 @@ nav ul {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    min-width: 435px;
+    /* min-width: 435px; */
 }
 
 
-footer{
-    width: 100%;
-    bottom: 0;
-    padding: 10px;
-    background: var(--heading-color);
-    color: var(--text-color);
-    margin-top: auto;
-    text-align: center;
-}
-
-/* idk */
-main{
+.section-content {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
+    border-left: 5px solid var(--heading-color);
 }
 
-.container{
-    display:flex;
+.container {
+    display: flex;
     align-items: flex-start;
     width: 100%;
     margin: 1% auto;
-    padding:20px;
-
-    
+    padding: 20px;
 }
 
-.section-name{
+.section-name {
     /* how do i add the line after this section? how can i make the contents fill the entire space? */
     /* border-right: 2px solid var(--text-color); */
-    display:flex;
+    display: flex;
     /* width:20%; */
-    height:100%;
+    height: 100%;
     justify-content: flex-end;
     padding: 20px;
-    
-
 }
 
-
-
-.section-content{
-    display:flex;
+.section-content {
+    display: flex;
     flex: 1 0 70%;
     justify-content: center;
     align-items: center;
@@ -150,6 +123,31 @@ main{
     padding: 20px;
 }
 
-.section-content nav{
-    width:100%;
+.section-content nav {
+    width: 100%;
 }
+
+/* contact links - seem ok */
+#contact-links ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#contact-links li{
+    display: inline-flex;
+    flex-flow: row wrap;
+    align-items:
+}
+
+#contact-links nav a{
+    color: var(--text-color);
+    font-weight: bold;
+    border-bottom: 3 px solid var(--text-color);
+    line-height: 1.5;
+    padding: 8px;
+
+}
+
+/* /* media query for larger screens */
+
