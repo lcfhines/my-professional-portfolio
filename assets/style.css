@@ -128,17 +128,18 @@ main {
     display: flex;
     max-width: 300px;
     height: 100%;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     padding: 20px;
     align-items: center;
-    flex: 4 1 100px;
+    flex: 1 0 100%;
 }
 
 /* selects class section-content (article) */
 .section-content {
     display: flex;
     border-left: 5px solid var(--heading-color);
-    flex: 1 0 70%;
+    flex: 1 0 100%;
+    /* flex: 1 0 70%; */
     justify-content: center;
     align-items: center;
     padding: 20px 20px 20px 60px;
@@ -188,7 +189,7 @@ main {
 #contact-links li {
     display: inline-flex;
     flex-flow: row wrap;
-    align-items:
+    /* align-items: */
 }
 
 /* selects the nav a within the contact-links id */
@@ -202,3 +203,20 @@ main {
 }
 
 /* /* media query for larger screens */
+
+@media screen and (min-width: 768px){
+    .section-name{
+        flex: 0 0 50%;
+        max-width: 50;
+    }
+
+    .section-content {
+        flex: 0 0 50%;
+        max-width: 50;
+}
+
+}
+
+@media screen and (min-width: 992px){
+
+}
