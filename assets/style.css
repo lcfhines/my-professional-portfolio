@@ -71,14 +71,6 @@ h1 {
     padding-top: 8px;
 }
 
-/* selects h2 elements */
-h2 {
-    border: 2px solid var(--title-color);
-    background: var(--title-color);
-    color: var(--text-color);
-    padding: 1%;
-    font-size: 20px;
-}
 
 /* selects the footer */
 footer {
@@ -89,101 +81,61 @@ footer {
     font-size: 14px;
 }
 
-
-/* selects the class subtitle image */
-.subtitle-image {
-    background-image: url(./images/pexels-dom-j-310452.jpg);
-    background-color: paleturquoise;
-    height: 80px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: right;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-}
-
-/* selects main */
 main {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    max-width: 1200px;
+    margin: 2% auto;
 }
 
-/* selects class container (section) */
+h2 {
+    font-size: 28px;
+    padding: 5px;
+}
+
 .container {
-    display: flex;
-    flex: 1 0 100%;
-    align-items: flex-start;
-    margin: 1% auto;
-    padding: 20px;
-    justify-content: flex-start;
+    justify-content: space-between;
+    margin: 1%;
+    padding: 15px;
 }
 
 
-/* selects class section-name (h3) */
 .section-name {
-
-    display: flex;
-    max-width: 300px;
-    height: 100%;
-    /* justify-content: flex-end; */
-    padding: 20px;
-    align-items: center;
-    flex: 1 0 100%;
-}
+    background-color: var(--title-color);
+}  
 
 /* selects class section-content (article) */
 .section-content {
+    padding: 15px;
+
+}
+
+#work-cards {
     display: flex;
-    border-left: 5px solid var(--heading-color);
-    flex: 1 0 100%;
-    /* flex: 1 0 70%; */
-    justify-content: center;
-    align-items: center;
-    padding: 20px 20px 20px 60px;
     flex-wrap: wrap;
-    max-width: 650px
 }
 
-/* selects class work-card (figure) */
-.work-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    position: relative;
-    text-align: center;
-    color: var(--text-color);
-    background-color: var(--heading-color);
-}
-
-/* selects class work-card-desc (h4) */
-.work-card-desc {
-    position: aboslute;
-    bottom: 8px;
-    right: 16px;
+.work-card-small{
+    width: 50%;
+    padding: 20px;
+    border: aliceblue solid 15px;
 
 }
 
-/* selects the ids rock-paper and dummy-project */
-#rock-paper,
-#dummy-project {
-    max-width: 50%;
-}
-
-/* selects the nav within the section-content class */
-.section-content nav {
+.work-card-big {
     width: 100%;
+    padding: 20px;
+    border: aliceblue solid 15px;
 }
 
-
-/* selects the ul within the contact-links id */
-#contact-links ul {
-
-    align-items: center;
-    justify-content: space-evenly;
+h3 {
+    text-align: center;
+    background-color: aliceblue;
 }
+
+h4 {
+    text-align: center;
+    background-color: aliceblue;
+}
+
 
 /* selects the li within the contact-links id */
 #contact-links li {
@@ -204,8 +156,21 @@ main {
 
 /* /* media query for larger screens */
 
-@media screen and (min-width: 768px){
-    .section-name{
+@media screen and (max-width: 768px){
+    header,
+    main {
+        flex-direction: column;
+    }
+
+    .section-name {
+        width: 100%;
+        text-align: center;
+    }
+    .section-content {
+        width: 100%;
+        text-align: center;
+    }
+    /* .section-name{
         flex: 0 0 50%;
         max-width: 50;
     }
@@ -213,10 +178,6 @@ main {
     .section-content {
         flex: 0 0 50%;
         max-width: 50;
-}
-
-}
-
-@media screen and (min-width: 992px){
+} */
 
 }

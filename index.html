@@ -12,12 +12,10 @@
     <!-- Header -->
     <header>
         <!-- Title -->
-
-        <div>
+        <div id="title-logo">
             <h1>Laura Fitzgerald</h1>
             <img class="avatar" src="assets/images/cowboy.png" alt="cowboy emoji">
         </div>
-
         <!-- Nav list with links to elements on page -->
         <nav>
             <ul>
@@ -28,62 +26,64 @@
         </nav>
     </header>
 
-    <!-- Subtitle with image -->
-    <section class="subtitle-image">
-        <h2>Professional Portfolio</h2>
-    </section>
-
     <!-- Main -->
 
     <main>
 
         <!-- Container - About Me -->
         <section class="container" id="About-Me">
-
-            <h3 class="section-name">About Me</h3>
+            <div class="section-name"> 
+                <h2>About Me</h2>
+            </div>
             <article class="section-content">
                 <!-- About me paragraph -->
-                <p>Hi! I'm Laura! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, reprehenderit iure
-                    necessitatibus
-                    aliquam explicabo maxime nihil id tempora ratione saepe? <br> <br> Est temporibus veniam cum dolore
-                    repellendus quo illo possimus commodi?</p>
+                <p>Hi! I'm Laura and I'm just beginning my coding journey through Columbia's Full Stack Coding Bootcamp.<br><br>This portfolio will showcase the web applications I've built using various technologies.</p>
             </article>
         </section>
 
         <!-- Container with work cards - Work-->
         <section class="container" id="Work">
-            <h3 class="section-name">Work</h3>
-
+            <div class="section-name">
+                <h2>Work</h2>
+            </div>
             <!-- Work cards with images -->
-            <article class="section-content">
-                <figure class="work-card" id="code-refactor">
+            <article class="section-content" id="work-cards">
+                <figure class="work-card-big">
                     <a href="https://lcfhines.github.io/the-code-refactor/"><img src="assets/images/code-refactor.png"
                             alt="screenshot of code refactor application" style="width:100%"></a>
-                    <h4 class="work-card-desc">Horiseon Code Refactor (HTML, CSS)</h4>
+                    <h3 class="work-card-desc">Horiseon Code Refactor</h3>
+                    <h4 class="work-card-desc">HTML, CSS</h4>
                 </figure>
-                <figure class="work-card" id="code-refactor">
+
+                <figure class="work-card-small">
+                    <a href="https://lcfhines.github.io/password-generator/"><img src="assets/images/password.png"
+                            alt="screenshot of password" style="width:100%"></a>
+                    <h3 class="work-card-desc">Password Generator</h3>
+                    <h4 class="work-card-desc">JavaScript</h4>
+                </figure>
+
+                <figure class="work-card-small">
+                    <a href="https://lcfhines.github.io/daily-planner/ "><img src="assets/images/daily planner.png"
+                            alt="screenshot of planner" style="width:100%"></a>
+                    <h3 class="work-card-desc">Daily Planner</h3>
+                    <h4 class="work-card-desc">jQuery, Moment.JS</h4>
+                </figure>
+
+                <figure class="work-card-big">
                     <a href="https://malvinah.github.io/marvel-for-dummies/"><img src="assets/images/marvel.png"
                             alt="screenshot of marvel application" style="width:100%"></a>
-                    <h4 class="work-card-desc">Marvel for Dummies (HTML, CSS, JavaScript, Client and Server Side APIs"</h4>
+                    <h3 class="work-card-desc">Marvel for Dummies</h3>
+                    <h4 class="work-card-desc">HTML, CSS, JavaScript, Client & Server Side APIs</h4>
                 </figure>
 
-                <figure class="work-card" id="rock-paper">
-                    <a href=""><img src="assets/images/rock-paper-scissors.jpg" alt="playing rock paper scissors"
-                            style="width: 100%"></a>
-                    <h4 class="work-card-desc">Rock, Paper, Scissors (JavaScript)</h4>
-                </figure>
-
-                <figure class="work-card" id="dummy-project">
-                    <a href=""><img src="assets/images/pexels-fernando-arcos-211122.jpg" alt="work under construction"
-                            style="width:100%"></a>
-                    <h4 class="work-card-desc">Coming Soon (JavaScript)</h4>
-                </figure>
             </article>
         </section>
 
         <!-- Contact me section -->
         <section class="container" id="Contact-Me">
-            <h3 class="section-name">Contact Me</h3>
+            <div class="section-name">
+                <h2>Contact Me</h2>
+            </div>
             <article class="section-content" id="contact-links">
 
                 <!-- Nav list with external links -->
