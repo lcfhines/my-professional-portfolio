@@ -5,7 +5,7 @@
     --title-color: rgb(150, 198, 240);
     --background-color: rgb(216, 233, 248);
     --text-color: rgb(38, 51, 86);
-    --site-font: Arial, Helvetica, sans-serif;
+    --site-font:'Lato', sans-serif;
 }
 
 * {
@@ -168,7 +168,7 @@ h4 {
 }
 
 .nav-link :hover {
-     color: rgb(63, 79, 63)
+     color: rgb(104, 153, 104)
 }
 
 /* /* media query for larger screens */
