@@ -1,8 +1,9 @@
 /* global styles */
 :root {
     --heading-color: rgb(245, 178, 71);
-    --title-color: rgb(96, 169, 228);
-    --background-color: white;
+    /* --title-color: rgb(96, 169, 228); */
+    --title-color: rgb(150, 198, 240);
+    --background-color: rgb(216, 233, 248);
     --text-color: rgb(38, 51, 86);
     --site-font: Arial, Helvetica, sans-serif;
 }
@@ -18,7 +19,7 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     font-family: var(--site-font);
-    font-size: 16px;
+    font-size: 20px;
 }
 
 /* selects header */
@@ -44,6 +45,7 @@ header nav a {
     border-bottom: 3 px solid var(--text-color);
     line-height: 1.5;
     padding: 8px;
+    text-decoration: none;
 }
 
 /* selects the div in the header */
@@ -78,7 +80,7 @@ footer {
     color: var(--text-color);
     text-align: center;
     padding: 10px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 main {
@@ -113,17 +115,24 @@ h2 {
     flex-wrap: wrap;
 }
 
+/* two in row */
 .work-card-small{
     width: 50%;
     padding: 20px;
-    border: aliceblue solid 15px;
+    border: aliceblue solid 20px;
 
 }
 
+/* one in row, full size */
 .work-card-big {
     width: 100%;
     padding: 20px;
-    border: aliceblue solid 15px;
+    border: aliceblue solid 20px;
+}
+
+.work-card-small:hover, .work-card-big:hover {
+    transition: .5s;
+    background-color: var(--text-color);
 }
 
 h3 {
@@ -141,6 +150,10 @@ h4 {
 #contact-links li {
     display: inline-flex;
     flex-flow: row wrap;
+    font-weight: bold;
+    padding: 10px;
+    
+
     /* align-items: */
 }
 
@@ -152,6 +165,10 @@ h4 {
     line-height: 1.5;
     padding: 8px;
 
+}
+
+.nav-link :hover {
+     color: rgb(63, 79, 63)
 }
 
 /* /* media query for larger screens */
